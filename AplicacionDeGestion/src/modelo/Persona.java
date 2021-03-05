@@ -50,10 +50,12 @@ public class Persona {
 	 * @param direccion
 	 * @return
 	 */
+	
 	public String comprobarDireccion(String edad, String nombre, String direccion) {
 		
+		String devuelve=edad+" "+nombre+" "+direccion;
 		
-		return edad+" "+nombre+" "+direccion;
+		return devuelve;
 	}
 	
 	@Override

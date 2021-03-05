@@ -9,7 +9,10 @@ public class Persona {
 	private int edad;
 	private String direccion;
 	
-	public Persona() {
+	
+	
+	
+	public Persona() { 
 		
 	}
 
@@ -24,6 +27,12 @@ public class Persona {
 		this.edad = edad;
 	}
 
+	/**
+	 * Constructor que recibe tres parametros 
+	 * @param nombre
+	 * @param edad
+	 * @param direccion
+	 */
 	public Persona(String nombre, int edad, String direccion) {
 		
 		this.nombre = nombre;
@@ -34,7 +43,19 @@ public class Persona {
 	public void calculo() {
 		
 	}
-
+	/**
+	 * 
+	 * @param edad
+	 * @param nombre
+	 * @param direccion
+	 * @return
+	 */
+	public String comprobarDireccion(String edad, String nombre, String direccion) {
+		
+		
+		return edad+" "+nombre+" "+direccion;
+	}
+	
 	@Override
 	public String toString() {
 		return "Persona [nombre=" + nombre + ", edad=" + edad + ", direccion=" + direccion + "]";
